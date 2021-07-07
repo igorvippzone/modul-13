@@ -263,7 +263,9 @@ header{
 }
 .swiper-pagination{
 	transform: scale(2);
-	color: tomato;
+	/* color: tomato; */
+	z-index: 10000;
+	/* height: 10px; */
 
 }
 .swiper-container {
