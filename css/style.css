@@ -606,7 +606,7 @@ z-index: 1111;
 #accordion .accordion__title:active::after,
 #accordion .accordion__title:focus::before,
 #accordion .accordion__title:focus::after{
-	color: var(--color__site);
+
 	background-color: var(--color__site);
 	transition: all .3s ease-in;
 }
@@ -614,7 +614,7 @@ z-index: 1111;
 #accordion .accordion__title.ui-accordion-header-active::before {
 
 
-	transform: translateY(-50%) rotate(90deg);
+	transform: translateY(-50%) rotate(45deg);
 	transition: transform .3s ease-in;
 }
 
