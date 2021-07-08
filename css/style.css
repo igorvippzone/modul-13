@@ -242,6 +242,11 @@ header{
 	stroke: var(--color__site);
 }
 
+.search-button:focus {
+	border: 1px var(--color__site) solid;
+
+}
+
 .nav__link:last-child {
 	margin-right: 0;
 	padding-right: 0;
@@ -474,6 +479,11 @@ z-index: 1111;
 .list__link:focus {
 	color: var(--color__site);
 }
+
+.list__link:focus {
+	border: 1px var(--color__site) solid;
+
+}
 .active {
 	color: var(--color__site);
 }
@@ -566,12 +576,6 @@ z-index: 1111;
 	padding-bottom: 45px;
 	padding-right: 50px;
 }
-
-#accordion .accordion__title:hover,
-#accordion .accordion__title:active{
-	color: var(--color__site);
-	transition: color .3s ease-in;
-}
 #accordion .accordion__title::before{
 	content: "";
 	display: block;
@@ -588,6 +592,25 @@ z-index: 1111;
 	transition: transform .3s ease-in;
 
 }
+#accordion .accordion__title:hover,
+#accordion .accordion__title:active,
+#accordion .accordion__title:focus{
+	color: var(--color__site);
+	transition: color .3s ease-in;
+	
+}
+
+#accordion .accordion__title:hover::before,
+#accordion .accordion__title:hover::after,
+#accordion .accordion__title:active::before,
+#accordion .accordion__title:active::after,
+#accordion .accordion__title:focus::before,
+#accordion .accordion__title:focus::after{
+	color: var(--color__site);
+	background-color: var(--color__site);
+	transition: all .3s ease-in;
+}
+
 #accordion .accordion__title.ui-accordion-header-active::before {
 
 
